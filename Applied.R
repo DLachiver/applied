@@ -11,21 +11,8 @@ names(table) <- c("x","DistCode","SerialNumb","HousMembers","YearBuilt","NumbRoo
 table$conso <- table$conso + 1
 table$conso <- log(table$conso)
 
-#  X
-#  mesto	DistCode
-#  rdb	SerialNumb
-#  brojclan	HousMembers
-#  s2	YearBuilt
-#  s3	NumbRooms
-#  s4	FloorSpace
-#  s14_4	Conso
-#  s9_1	tableY/N
-#  
-#  income	income
 
 
-table$YearBuilt <- table$YearBuilt - 1800
-summary(table)
 
 
 LM1 <- lm()
